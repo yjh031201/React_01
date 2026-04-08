@@ -26,5 +26,5 @@ export default function PackingList() {
   )
 }
 ```
-PackingList 컴포넌트에서 이름과 이미 싼 물건의 여부를 확인해서 보내면
+PackingList 컴포넌트에서 이름과 이미 싼 물건의 여부를 확인해서 보내면   
 Item컴포턴트에서 받아서 조건부 렌더링을 통해 html코드를 내보냄

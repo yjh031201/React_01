@@ -19,8 +19,6 @@ export default function PackingList() {
   )
 }
 ```
-삼항 연산자로 수정   
--> return문 안에 넣고 중괄호로 감싼다
 ```jsx
 export default function Item({ name, isPacked }) {
   if (isPacked) {
@@ -31,13 +29,18 @@ export default function Item({ name, isPacked }) {
     }
 }
 ```
-
+삼항 연산자로 수정   
+-> return문 안에 넣고 중괄호로 감싼다
 ```jsx
 export default function Item({ name, isPacked }) {
   return (
-    <>
-      {isPacked ? <del><li>{name} ✅</li></del> : <li>{name} ❌</li>}
-    </>
+    <li>
+      {isPacked ? (
+        <del>{name+ "✅"}</del>
+      ) : (
+        name
+      )}
+    </li>
   )
 }
 ```

@@ -31,7 +31,7 @@ export default function Item({ name, isPacked }) {
 ```
 삼항 연산자로 수정   
 -> return문 안에 넣고 중괄호로 감싼다   
-/*<del>*/ <-- 취소선
+```<del>``` <-- 취소선
 ```jsx
 export default function Item({ name, isPacked }) {
   return (

@@ -1,7 +1,7 @@
 # 202230220 양종호
 ### 2026-04-08
 
-true, false 확인에는 변수명 앞에 is를 사용하는 관례
+true, false 확인에는 변수명 앞에 is를 붙여서 만들어주면 좋음
 ```jsx
 export default function Item({ name, isPacked }) {
   if (isPacked) {

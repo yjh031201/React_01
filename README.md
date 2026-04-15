@@ -2,7 +2,8 @@
 ### 2026-04-15
 json
 
-> key : value   
+> key : value
+
 == -> 타입은 달라도 모양이 같으면 true   
 === -> 타입까지 같아야 true
 

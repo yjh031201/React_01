@@ -4,15 +4,6 @@ json
 
 > key:value
 
-> {
-
-> key1:value1,
-
-> key2:value2
-
-> }
-
-
 ### 2026-04-08
 
 true, false 확인에는 변수명 앞에 is를 붙여서 만들어주면 좋음   

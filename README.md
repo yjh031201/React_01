@@ -2,20 +2,15 @@
 ### 2026-04-15
 json
 
+> key:value
 
-key:value
+> {
 
+> key1:value1,
 
-{
+> key2:value2
 
-
-key1:value1,
-
-
-key2:value2
-
-
-}
+> }
 
 
 ### 2026-04-08

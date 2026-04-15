@@ -2,7 +2,7 @@
 ### 2026-04-15
 json
 
-> key:value
+> key : value
 
 ### 2026-04-08
 

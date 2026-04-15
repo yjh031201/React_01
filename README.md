@@ -9,7 +9,7 @@ json
 
 화살표 함수는 묵시적으로 => 바로 뒤 식을 반환하기 때문에 return문이 필요하지않다.
 
-그러나 <li>...</li> 와 같은 한 줄이 아닌 중괄호를 사용해야 하는 경우는 반환이 안되게 때문에 return문이 필요하다
+그러나 ```<li>...</li>``` 와 같은 한 줄이 아닌 중괄호를 사용해야 하는 경우는 반환이 안되게 때문에 return문이 필요하다
 
 내부 변수 이름은 관용적으로 heroes -> hero, filterHeroes -> filterHero 처럼 복수를 단수로 사용한다.   
 key prop(key={hero.id})를 부여해줘야 key prop오류가 안남 

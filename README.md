@@ -4,9 +4,39 @@ json
 
 > key : value
 
-== -> 타입은 달라도 모양이 같으면 true   
-=== -> 타입까지 같아야 true
+== --> 타입은 달라도 모양이 같으면 true   
+=== --> 타입까지 같아야 true
 
+화살표 함수는 묵시적으로 => 바로 뒤 식을 반환하기 때문에 return문이 필요하지않다.
+
+그러나 <li>...</li> 와 같은 한 줄이 아닌 중괄호를 사용해야 하는 경우는 반환이 안되게 때문에 return문이 필요하다
+
+내부 변수 이름은 관용적으로 heroes -> hero, filterHeroes -> filterHero 처럼 복수를 단수로 사용한다.   
+key prop(key={hero.id})를 부여해줘야 key prop오류가 안남 
+```jsx
+import { heroes } from '../components/Heroes';
+
+export default function MovieHeroes() {
+  const filterHeroes = heroes.filter(hero => hero.power === 5);
+  const listHeroes = filterHeroes.map(hero =>
+    <li key={hero.id}>
+      <p>
+        {hero.name}의 배역은 {hero.casting}입니다.
+      </p>
+      <p>
+        {hero.casting}의 파워는 {hero.power}입니다.
+      </p>
+    </li>);
+  return (
+    <section>
+      <h1>영화 속 영웅들</h1>
+      <ul>
+        {listHeroes}
+      </ul>
+    </section>
+  );
+}
+```
 ### 2026-04-08
 
 true, false 확인에는 변수명 앞에 is를 붙여서 만들어주면 좋음   

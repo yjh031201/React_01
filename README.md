@@ -1,10 +1,10 @@
 # 202230220 양종호
 # 2026-04-29   
 ## 스타일 적용하기
-> css (import)   
-> 인라인 css   
-> CSS-in-JS   
-> CSS 프레임워크   
+1. css (import)   
+2. 인라인 css   
+3. CSS-in-JS   
+4. CSS 프레임워크   
 > 
 
 ### CSS-in-JS

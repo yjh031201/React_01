@@ -5,7 +5,7 @@
 2. 인라인 css   
 3. CSS-in-JS   
 4. CSS 프레임워크   
-> 
+5. CSS Module
 ### CSS(import)   
 >css파일과 jsx파일을 따로 만들어 import해주는 방식
 
@@ -21,7 +21,21 @@
 > tailwindCSS   
 > bootstrap   
 > materialize   
-> bulma 등등   
+> bulma 등등
+### CSS Module
+>css module은 클래스명을 _[클래스이름]-[해쉬값]의 형태로 자동 변환하여, 고유한 이름의 로컬 스코프를 제공하는 기술
+>스타일의 충돌 방지가능, 유지보수에 유리
+>### 사용법
+>>파일 이름의 규칙: 파일이름은 [컴포넌트 이름].module.css의 형태로 확장자는 반드시 .module.css 사용   
+>>일반 css의 작성법을 따름
+>>태그선택자는 고유한 이름을 할당받지 않음   
+>>camelCase를 주로 사용   
+>### 클래스에 적용
+>>import하여 스타일을 사용   
+>>jsx에서는 class키워드 대신 className을 사용   
+>>class 이름은 객체를 사용할 때처럼 [변수명].[클래스명]의 형태로 작성   
+>>class이름 전체를 중괄호로 감싸야함   
+>>
 # 2026-04-15
 json
 

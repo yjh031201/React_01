@@ -44,29 +44,26 @@
 >>함수의 이름만 prop의 형태로 전당
 >함수를 호출하므로 함수의 이름에 소괄호 사용
 >```jsx
->import style from "./ButtonCom.module.css";
-
-
-
-export default function ButtonCom() {
-  function clickHandler() {
-    alert("버튼 클릭");
-  }
-
-  return (
-    <>
-      <h1 className={style.title}>ButtonCom</h1>
-      <nav className={style.nav}>
-        <button className={style.btn} onClick={clickHandler}>
-          Button1
-        </button>
-        <button className={style.btn} onClick={clickHandler}>
-          Button2
-        </button>
-      </nav>
-    </>
-  );
-}
+>
+>export default function ButtonCom() {
+>  function clickHandler() {
+>    alert("버튼 클릭");
+>  }
+>
+>  return (
+>    <>
+>      <h1 className={style.title}>ButtonCom</h1>
+>      <nav className={style.nav}>
+>        <button className={style.btn} onClick={clickHandler}>
+>          Button1
+>        </button>
+>        <button className={style.btn} onClick={clickHandler}>
+>          Button2
+>        </button>
+>      </nav>
+>    </>
+>  );
+>}
 >```
 # 2026-04-15
 json

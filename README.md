@@ -1,5 +1,5 @@
 # 202230220 양종호
-# 2026-04-29   
+# 2026-05-06
 ## 이벤트 핸들러 적용   
 1. 비디오 실행
 ```jsx
@@ -52,7 +52,7 @@ export function handleStop({ message }) {
   if (videoSource) videoSource.pause();
 }
 ```
-     
+# 2026-04-29      
 ## 스타일 적용하기
 1. css (import)   
 2. 인라인 css   

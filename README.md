@@ -1,5 +1,58 @@
 # 202230220 양종호
 # 2026-04-29   
+## 이벤트 핸들러 적용   
+1. 비디오 실행
+```jsx
+import Button from "./Button";
+import { handleClick, handlePlay, handleStop } from "./Handle";
+
+export default function Toolbar() {
+  return (
+    <>
+      <nav>
+        <Button message="videoplay" handler={handlePlay}>
+          play
+        </Button>
+        
+        <Button message="videoplay" handler={handleStop}>
+          stop
+        </Button>
+      </nav>
+      <section>
+        <video id="videoplay" width="320" height="240" controls>
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+      <section>
+        <div className="toolbar">
+          <Button message="버튼1클릭" handler={handleClick}>
+            버튼1
+          </Button>
+          <Button message="버튼2클릭" handler={handleClick}>
+            버튼2
+          </Button>
+        </div>
+      </section>
+    </>
+  );
+}
+```
+```jsx
+export function handleClick(message) {
+    alert(message);
+  }
+export function handlePlay({ message }) {
+  const videoSource = document.getElementById(message);
+  if (videoSource) videoSource.play();
+}
+
+export function handleStop({ message }) {
+  const videoSource = document.getElementById(message);
+  if (videoSource) videoSource.pause();
+}
+```
+     
 ## 스타일 적용하기
 1. css (import)   
 2. 인라인 css   

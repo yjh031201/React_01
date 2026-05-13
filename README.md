@@ -9,7 +9,6 @@
    > 관례적으로 이벤트 오브젝트를 의미하는 "event"를 "e"로 줄여서 호출
    > ```jsx
    > import style from '../assets/Bubble.module.css' 
-
    >function Button({onClick, children}){
    >  return(
    >    <button className={style.button} onClick={e=>{e.stopPropagation(); onClick()}}>

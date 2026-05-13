@@ -1,9 +1,39 @@
 # 202230220 양종호
 # 2026-05-13   
 1. 비디오 함수 및 이벤트 함수에 대해,   
-   >저번 실습에서는 Hook을 사용할 수 없어 DOM에 직접 접근했지만 React에서는 DOM에 직접 접근하는 것을 권장하지 않음   
-   >React에서 DOM을 제어할 때는 useRef를 사용하여 엘리먼트를 ref객체로 관리하는 것이 좋음(관례적으로 앞에 use가 붙은 것은 Hook임)   
-   > 모듈 이름은 camelCace, 컴포넌트는 PascalCase사용   
+   > 저번 실습에서는 Hook을 사용할 수 없어 DOM에 직접 접근했지만 React에서는 DOM에 직접 접근하는 것을 권장하지 않음   
+   > React에서 DOM을 제어할 때는 useRef를 사용하여 엘리먼트를 ref객체로 관리하는 것이 좋음(관례적으로 앞에 use가 붙은 것은 Hook임)   
+   > 모듈 이름은 camelCace, 컴포넌트는 PascalCase사용
+2. 이벤트 전파의 중지
+   > 이벤트 헨들러는 이벤트 오브젝트를 유일한 매개변수로 사용
+   > 관례적으로 이벤트 오브젝트를 의미하는 "event"를 "e"로 줄여서 호출
+   > ```jsx
+   > import style from '../assets/Bubble.module.css' 
+
+   >function Button({onClick, children}){
+   >  return(
+   >    <button className={style.button} onClick={e=>{e.stopPropagation(); onClick()}}>
+   >      {children}
+   >    </button>
+   >  )
+   >}
+   >
+   >export default function Bubble(){
+   >  
+   >  return (
+   >    <>
+   >      <h1 className={style.Bubble}>Bubble</h1>
+   >      <nav className={style.navBar} onClick={()=>alert("네비게이션바 클릭!")}>
+   >        <Button onClick={() => alert("버튼 1 클릭")}>
+   >           버튼1      {/*<---children */}
+   >        </Button>
+   >        <Button onClick={() => alert("버튼 2 클릭")}>
+   >          버튼2
+   >        </Button>
+   >      </nav>
+   >    </>
+   >  )
+   >}
 # 2026-05-06
 ## 이벤트 핸들러 적용   
 1. 비디오 실행

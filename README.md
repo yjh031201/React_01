@@ -34,6 +34,23 @@
    >  )
    >}
    >```
+3. e.stopPropagation()와 e.preventDefult()   
+   >이벤트 전파를 중지하는 데는 둘다 유용하지만, 전혀 다른 기능을 가지고 있음   
+   >e.stopPropagation()은 이벤트 핸들러가 상위 태그에서 실행되지 않도록 멈추는 기능을 합니다.   
+   >반면 e.preventDefult()는 브라우저 기본 동작을 갖고 있는 일부 이벤트가 해당 기본 동작을 실행하지 않도록 방지하는 기능을 합니다.   
+   >```jsx
+   >export default function Signup2(){
+   >return(
+   > <form onSubmit={(e)=> {
+   >   e.preventDefault();
+   >   alert("Submitting");
+   > }}>
+   >   <input/>
+   >   <button>Send2</button>
+   > </form>
+   >)
+   >}
+   >```
 # 2026-05-06
 ## 이벤트 핸들러 적용   
 1. 비디오 실행

@@ -1,4 +1,93 @@
 # 202230220 양종호
+# 2026-05-20
+### 이미지를 배열로 저장
+```jsx
+export const imgData = [
+  {
+    name : "slide1",
+    artist : "artist1",
+    description : "description1",
+    url:"https://placehold.co/600x400?text=Slide1",
+    alt: "slide1"
+  },
+  {
+    name : "slide2",
+    artist : "artist2",
+    description : "description2",
+    url:"https://placehold.co/600x400?text=Slide2",
+    alt: "slide2"
+  },
+  {
+    name : "slide3",
+    artist : "artist3",
+    description : "description3",
+    url:"https://placehold.co/600x400?text=Slide3",
+    alt: "slide3"
+  },
+  {
+    name : "slide4",
+    artist : "artist4",
+    description : "description4",
+    url:"https://placehold.co/600x400?text=Slide4",
+    alt: "slide4"
+  },
+  {
+    name : "slide5",
+    artist : "artist5",
+    description : "description5",
+    url: slide.slider1,
+    alt: "slide5"
+  },
+  {
+    name : "slide6",
+    artist : "artist6",
+    description : "description6",
+    url: slide.slider2,
+    alt: "slide6"
+  }
+];
+```jsx
+### 저장한 이미지를 가져와서 사용
+```
+export default function Carousel() {
+  const [index, setIndex] = useState(0);
+  function handlerClick() {
+    if (index === imgData.length - 1) {
+      setIndex(0);
+    } else {
+      setIndex(index + 1);
+    }
+  }
+  function handlerPrevious() {
+    if (index === 0) {
+      setIndex(imgData.length - 1);
+    } else {
+      setIndex(index - 1);
+    }
+  }
+
+  let slide = imgData[index];
+  return (
+    <>
+      <div className={styles.imgWrapper}>
+        <div className={styles.btnGroup}>
+          <button className={`${styles.navBtn} ${styles.next}`} onClick={handlerClick}>Next</button>
+          <button className={`${styles.navBtn} ${styles.prev}`} onClick={handlerPrevious}>Previous</button>
+        </div>
+        <h2>
+          <i>{slide.name}</i>
+          by {slide.artist}
+        </h2>
+        <h3>
+          ({index + 1} of {imgData.length})
+        </h3>
+        <img src={slide.url} alt={slide.alt} />
+      </div>
+      <p>{slide.description}</p>
+    </>
+  )
+}
+```
 # 2026-05-13   
 1. 비디오 함수 및 이벤트 함수에 대해,   
    > 저번 실습에서는 Hook을 사용할 수 없어 DOM에 직접 접근했지만 React에서는 DOM에 직접 접근하는 것을 권장하지 않음   

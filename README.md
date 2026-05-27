@@ -11,7 +11,10 @@
    >예) ```const [index, setIndex] = useState(0)```   
 3. Hook 사용의 주의점   
    >일반 모듈과 같이 import해서 사용한다.   
-   >
+4. 여러개의 state 사용
+   >하나의 컴포넌트에서 사용 가능한 state변수의 개수에는 제한이 없으며, 원하는 타입의 state변수를 가질 수 있다.   
+   >예) ```const [index, setIndex] = useState(0)
+   >const [more, setMore] = useState(false)```
 # 2026-05-20
 ### 이미지를 배열로 저장
 ```jsx

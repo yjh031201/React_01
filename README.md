@@ -46,9 +46,9 @@ export const imgData = [
     alt: "slide6"
   }
 ];
-```jsx
-### 저장한 이미지를 가져와서 사용
 ```
+### 저장한 이미지를 가져와서 사용
+```jsx
 export default function Carousel() {
   const [index, setIndex] = useState(0);
   function handlerClick() {

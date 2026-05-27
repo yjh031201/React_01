@@ -18,6 +18,8 @@
    >const [index, setIndex] = useState(0)
    >const [more, setMore] = useState(false)
    >```
+5. state가 있는 컴포넌트를 중첩한다면?   
+   >state는 각 컴포넌트에서 독립적으로 동작함   
 # 2026-05-20
 ### 이미지를 배열로 저장
 ```jsx

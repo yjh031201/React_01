@@ -35,7 +35,23 @@
    >1단계 : 렌더링 트리거   
    >>컴포넌트에 렌더링이 일어나는 이유는 2가지   
    >>1. 컴포넌트의 초기 렌더링인 경우   
-   >>2. 컴포넌트의 state가 업데이트된 경우   
+   >>>대상 DOM노드와 함께 createRoot를 호출한 다음 해당 컴포넌트로 render 메서드를 호출하면 이 작업이 완료됩니다.   
+   >>>vite로 프로젝트를 생성한 경우 index.jsp의 역할을 main.jsx에서 함   
+   >>>id가 root인 엘리먼트 즉 DOM노드를 createRoot()함수로 호출한 다음, render 메서드를 통해 App컴포넌트를 호출하고있다   
+   >>>이 작업을 초기 렌더링 작업이라고 함   
+   >>>```jsx
+   >>>import { StrictMode } from 'react'
+   >>>import { createRoot } from 'react-dom/client'
+   >>>import './index.css'
+   >>>import App from './App.jsx'
+   >>>createRoot(document.getElementById('root')).render(
+   >>><StrictMode>
+   >>><App />
+   >>></StrictMode>,
+   >>>)
+   >>>```
+   >>3. 컴포넌트의 state가 업데이트된 경우
+   >>
 # 2026-05-20
 ### 이미지를 배열로 저장
 ```jsx

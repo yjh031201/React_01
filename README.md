@@ -18,7 +18,7 @@
    >const [index, setIndex] = useState(0)
    >const [more, setMore] = useState(false)
    >function handlerSee() {
-   > setMore(!more);
+   >    setMore(!more);
    >}
    ><button className={`${styles.navBtn} ${styles.see}`} onClick={handlerSee}>
    >         {more ? 'Hide' : 'Show'} Description

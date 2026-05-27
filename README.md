@@ -17,9 +17,19 @@
    >```jsx
    >const [index, setIndex] = useState(0)
    >const [more, setMore] = useState(false)
+   >function handlerSee() {
+   > setMore(!more);
+   >}
+   ><button className={`${styles.navBtn} ${styles.see}`} onClick={handlerSee}>
+   >         {more ? 'Hide' : 'Show'} Description
+   >       </button>
+   >{more && <p>{slide.description}</p>}
    >```
 5. state가 있는 컴포넌트를 중첩한다면?   
    >state는 각 컴포넌트에서 독립적으로 동작함   
+   >props와 달리 state는 선언한 컴포넌트 외에는 완전히 비공개   
+   >두개의 캐러셀 state를 동기화 하고 싶다면, 자식 컴포넌트에서 state를 제거하고, 가장 가까운 공통 부모 컴포넌트에 state를 추가하면 된다.   
+   >
 # 2026-05-20
 ### 이미지를 배열로 저장
 ```jsx

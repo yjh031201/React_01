@@ -8,7 +8,8 @@
    >setNumber(number + 1)
    >setNumber(number + 1)
    >setNumber(number + 1)
-   >}```
+   >}
+   >```
    >setNumber(number + 1)를 계속 호출한다 하더라도 number값은 항상 0임
    >+3이 아닌 +1씩 됨
 2. GitHub Pages 기본 저장소

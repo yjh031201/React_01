@@ -1,4 +1,19 @@
 # 202230220 양종호
+# 2026-06-05
+1. React 업데이트의 배치처리
+   >React함수는 함수를 한 줄씩 실행해 나가지않음
+   >큐를 통해 렌더링함
+   >각 렌더링의 state값은 고정되어있음
+   >function handleClick(){
+   >setNumber(number + 1)
+   >setNumber(number + 1)
+   >setNumber(number + 1)
+   >}
+   >setNumber(number + 1)를 계속 호출한다 하더라도 number값은 항상 0임
+   >+3이 아닌 +1씩 됨
+2. GitHub Pages 기본 저장소
+   >저장소 이름은 도메인의 형태
+   >최상위 도메인 부분을 .com이 아니라 .io로 해야함
 # 2026-05-27
 1. React가 state를 강조하는 이유   
    >React의 거의 모든 기능은 state 중심으로 연결   

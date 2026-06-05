@@ -18,8 +18,9 @@
    >진행 순서
    >>깃 초기화 -> 깃 등록 -> 깃허브 세팅에서 브랜치 확인 -> npm i gh-pages로 모듈 설치 ->   
    >>package.json파일에 ```"homepage": "https://yjh031201.github.io``` 추가   
-   >>"scripts"에 ```"predeploy": "npm run build",
-   >>"deploy": "gh-pages -d dist"``` 추가 -> 터미널에서 npm run deploy를 통해 원격 배포 -> https://yjh031201.github.io/ 주소로 접속가능
+   >>"scripts"에 ```"predeploy": "npm run build", "deploy": "gh-pages -d dist"``` 추가 ->   
+   >> 터미널에서 npm run deploy를 통해 원격 배포 ->   
+   >> https://yjh031201.github.io/ 주소로 접속가능
 # 2026-05-27
 1. React가 state를 강조하는 이유   
    >React의 거의 모든 기능은 state 중심으로 연결   

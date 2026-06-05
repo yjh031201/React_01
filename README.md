@@ -6,9 +6,9 @@
    >각 렌더링의 state값은 고정되어있음
    >```
    >function handleClick(){
-   >setNumber(number + 1)
-   >setNumber(number + 1)
-   >setNumber(number + 1)
+   >   setNumber(number + 1)
+   >   setNumber(number + 1)
+   >   setNumber(number + 1)
    >}
    >```
    >setNumber(number + 1)를 계속 호출한다 하더라도 number값은 항상 0임

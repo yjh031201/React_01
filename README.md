@@ -4,7 +4,8 @@
    >React함수는 함수를 한 줄씩 실행해 나가지않음
    >큐를 통해 렌더링함
    >각 렌더링의 state값은 고정되어있음
-   >```function handleClick(){
+   >```
+   >function handleClick(){
    >setNumber(number + 1)
    >setNumber(number + 1)
    >setNumber(number + 1)
